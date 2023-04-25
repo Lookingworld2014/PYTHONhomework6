@@ -15,7 +15,7 @@ for i in range(len(list_1)):
 import random
 listik = [random.randint(0, 100) for _ in range(10)]
 print("Список:", my_list)
-min_val = 20
-max_val = 80
+min_val = int(input("Задаём минимум"))
+max_val = int(input("Задаём максимум"))
 indices = [i for i in range(len(listik)) if min_val <= listik[i] <= max_val]
 print(f"Индексы элементов, принадлежащих диапазону [{min_val}, {max_val}]:", indices)
